@@ -3,8 +3,8 @@ name: Build
 on:
   pull_request:
     branches:
-      - master
-      - exampleSite
+      - main
+      # - exampleSite
   workflow_dispatch:
     # manual run
     inputs:
