@@ -3,6 +3,7 @@ title: hthanh's blog
 paginate: 5
 theme: PaperMod
 defaultContentLanguage: en
+publishDir: "public"
 
 enableRobotsTXT: true
 buildDrafts: false
