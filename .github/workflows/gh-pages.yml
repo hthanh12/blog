@@ -7,7 +7,7 @@ on:
       - "LICENSE"
       - "README.md"
     branches:
-      - main
+      - main # Set a branch to deploy
       # - exampleSite
   workflow_dispatch:
     # manual run
@@ -19,12 +19,13 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
         with:
-          ref: main
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Get Theme
         run: git submodule update --init --recursive
