@@ -1,6 +1,6 @@
 baseURL: "https://hthanh12.github.io/blog/"
 title: hthanh's blog
-paginate: 5
+paginate: 8
 theme: PaperMod
 defaultContentLanguage: en
 publishDir: "docs"
