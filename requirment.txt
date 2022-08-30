@@ -1,0 +1,2 @@
+sudo apt-get install hugo
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
